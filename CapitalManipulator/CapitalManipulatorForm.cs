@@ -15,11 +15,11 @@ public partial class CapitalManipulatorForm : Form {
     }
 
     private void prompt_Click(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
+        // throw new System.NotImplementedException();
     }
 
     private void author_Click(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
+        // throw new System.NotImplementedException();
     }
 
     private void manipulateButton_Click(object sender, EventArgs e) {

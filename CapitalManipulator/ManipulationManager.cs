@@ -87,7 +87,7 @@ public class ManipulationManager {
 
     private static void SpeakCapitalTruth() {
         SpeechSynthesizer synth = new SpeechSynthesizer();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             synth.SpeakAsync(
                 "孩子，不要动资本的蛋糕，后果很严重。My child, do not touch the capital's cake, or there will be serious consequences.");
         }

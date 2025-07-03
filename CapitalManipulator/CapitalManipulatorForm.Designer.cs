@@ -85,6 +85,7 @@ partial class CapitalManipulatorForm {
         Controls.Add(prompt);
         Controls.Add(title);
         Font = new System.Drawing.Font("Microsoft YaHei UI", 20F);
+        FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         Location = new System.Drawing.Point(100, 100);
         Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
         Text = "资本做局器 Capital Manipulator";

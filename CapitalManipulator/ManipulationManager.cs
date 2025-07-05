@@ -47,7 +47,7 @@ public class ManipulationManager {
 
         Label text = new Label {
             Text = """
-                   :(
+                   :)
 
                    你的电脑没有遇到任何问题，且不需要重启。我们不收集任何错误信息，然后也不会为你重新启动。
                    Your PC did not run into a problem and does not need to restart. We're not collecting any error info, and we'll not restart for you either.

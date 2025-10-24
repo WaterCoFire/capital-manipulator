@@ -1,8 +1,10 @@
 # capital-manipulator
 
+<img width="861" height="659" alt="Screenshot 2025-10-24 211320" src="https://github.com/user-attachments/assets/faa0e056-06cc-4c57-aa46-371a302f8012" />
+
 ## What is this?
 
-Each time the "touch the capital's cake" button is pressed, one of the following six outcomes will occur randomly (each with a 16.67% probability):
+This is a prank application. Each time the "touch the capital's cake" button is pressed, one of the following six outcomes will occur randomly (each with a 16.67% probability):
 
 - Computer shuts down automatically
 - Computer displays a fake BSOD
